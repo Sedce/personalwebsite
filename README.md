@@ -1,2 +1,1 @@
-# personalwebsite
-My personal shitty website
+di ko kabalo mo add og image. hahahah oh my 

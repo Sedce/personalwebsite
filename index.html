@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="stylesamp.css">
+        <link href='//fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+<div id="cover"><br/><br/><br/><br/>
+                              <h1><center>Cedez Marie</center></h1>
+                              <br/><br/>
+                              <h2><center>At the end of the day, ngitngit. Sometimes means usahay.</center></h2>
+                              <br/><br/>
+                              <h3><center><img class = "image" src="images\face-option.png" alt = "Avatar" style = "width:300px;height:300px"></center></h3>
+                              <c<h4><a class = "menuitem" href="#profile"><span>    </span></a></h4>
+                              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div class="main" >
+<div id="profile">
+                      <br/><br/><br/><br/><br/>
+                      <img id = "image" src = "images/prof-image.jpg">
+                      <div class="tab" >
+
+                      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+                      <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
+                      <button class="tablinks" onclick="openTab(event, 'Achievements')">Achievements</button>
+                      </div>
+
+                      <div id="About" class="tabcontent">
+                      <center><h3>Hi!</h3></center>
+                      <br/>
+                      <p>My name is <i>Cedez Marie G. Gulane</i>, I currently can't search the internet for the Lorem Ipsium dummy text
+                        so here I am making up words.</p>
+                        <br/>
+                      <p>By this point, I will write every word I know. ambience, boon, bane, ricochet, rorrim, cede, kumquat, apples, idk</p>
+                      <p>For more information about me and if you have any interests in hiring me click <i>this</i></p>
+                      </div>
+
+                      <div id="Skills" class="tabcontent">
+                      <h3>Here are some of my sk1llz</h3>
+                        <br/>
+                      <p>I can cook pancit canton under 2 minutes. EZ</p>
+                      </div>
+
+                      <div id="Achievements" class="tabcontent">
+                      <h3>Here are some of my achievements.</h3>
+                        <br/>
+                      <p>I won the "trip to jerusalem" contest during our 2014 Christmas Party</p>
+                      </div>
+                        <!-- ako ibutang diri kay description, skills -->
+                          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<div id="weeb">
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                      <h1><center>Cedez Marie Gulane</center></h1>
+                        <h2><center>Favorite Books</center></h2>
+                        <!-- book checklist. make people suggest what I should read -->
+                        <div class="slideshow-container">
+                            {% for book in books%}
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="1-stars.png" style="width:100%">
+                          <p>The Great Gatsby by F. Scott Fitzgerald</p>
+                          <p>Rating: 5/5</p>
+                          <div class="text">Caption Text</div>
+                        </div>
+                          {% end for %}
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="2-stars.png" style="width:100%">
+                          <p></p>
+                          <div class="text">Caption Two</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="3-stars.png" style="width:100%">
+                          <div class="text">Caption Three</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+                        <p id = "title">{{}}</p>
+                        <p id = "rating">{{}}</p>
+                        <p id = "desciption">{{}}</p>
+                      <br>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        </div>
+<div id="contact">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h1><center>Cedez Marie Gulane</center></h1>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+
+</div>
+<div id="floatMenu">
+  <ul class="menu">
+    <li type = "none"><a class = "menuitem" href="#profile"> Profile </a></li>
+    <li type = "none"><a class = "menuitem" href="#weeb"> Books </a></li>
+    <li type = "none"><a class = "menuitem" href="#contact" > Contact </a></li>
+  </ul>
+</div>
+    </body>
+</html>
