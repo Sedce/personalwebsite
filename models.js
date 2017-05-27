@@ -1,6 +1,6 @@
 var Sequelize = require('sequelize');
 //connect database
-var db = new Sequelize('postgres://postgres:12345@localhost:5432/personalweb_repo');
+var db = new Sequelize('postgres://postgres:12345@localhost:5432/webeng_sedce');
 //creating the books books table
 var Books = db.define('books',{
       link:{
